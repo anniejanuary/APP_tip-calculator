@@ -6,5 +6,5 @@ percentage_format = 1 + percentage * 0.01  #  or w/o this and instead: total_bil
 
 total_per_person = bill / number_of_people * percentage_format
 total_per_person_format = round(total_per_person,2)
-#  OR:                  = "{:.2f}".format(total_per_person)
+#  OR:                  = "{:.2f}".format(total_per_person) -- if I really care about seeing '0' in the 2nd decimal point, eg. 33.60
 print(f"The bill and the {percentage} % tip split {number_of_people} ways is: {total_per_person_format}")
